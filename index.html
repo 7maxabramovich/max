@@ -4,217 +4,160 @@
 	<meta charset="utf-8">
 	<title>My site</title>
 
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!-----------   adaptive   ------------>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-----------      ------------>
 
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-----------   jquery   ------------>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-----------   end jquery   ------------>
 	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+	
+<!----------------------------- fancybox ----------------->  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!----------------------------- end fancybox ----------------->  
+
+	<link rel="stylesheet" type="text/css" href="style.css"/>	
+	<script src="js.js"></script>
 </head>
+
+
+
 <body>
 
-<h1>My site</h1>
+<h1 class="text_cent">My site</h1>
 
+<div class="nav-container">
+<div class="nav">
+	<ul>
+		<a><li>HTML</li></a>
+		<a><li>CSS</li></a>
+		<a><li>JS</li></a>
+		<a><li>React</li></a>
+		<a><li>Redux</li></a>
+	</ul>
+	<div class="clear"></div>
+</div>
+</div>
+
+<!------------------------------->
+<div id="navbar" class="menu">
+	<div class="topnav" id="myTopnav">
+	  <a href="#home" class="active">Home</a>
+	  <a href="#news">News</a>
+	  <a href="#contact">Contact</a>
+	  <a href="#about">About</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+</div>
+
+<!------------------------------->
+<div class="tab-container">
+	<div class="tab-wrapper">
+		<input type="radio" name="tab" id="tab1" checked />
+		<label class="tab-label" for="tab1">Вкладка 1</label>
+		<div class="tab-item">1</div>
+
+		<input type="radio" name="tab" id="tab2" />
+		<label class="tab-label" for="tab2">Вкладка 2</label>
+		<div class="tab-item">2</div>
+
+		<input type="radio" name="tab" id="tab3" />
+		<label class="tab-label" for="tab3">Вкладка 3</label>
+		<div class="tab-item">3</div>
+	</div>
+</div>
+
+<!------------------------------->
+<p class="beautiful_effect">1111</p>
+	
+<!---------------   list   -------------------->
+<ul>
+	<li><a href="#1">slick-slider</a></li>
+	<li><a href="#2">form</a></li>
+	<li><a href="#3">spoiler</a></li>
+</ul>
+<!-----------------     ------------- ------->
+
+
+<a class="anchor" name="1"></a>
+
+
+<!------------------------ slick-slider ------------>	
 <div class="slick-slider">
     <a data-fancybox="gallery" href="photo/1.jpg"><img src="photo/1.jpg"></a>
     <a data-fancybox="gallery" href="photo/2.jpg"><img src="photo/2.jpg"></a>
     <a data-fancybox="gallery" href="photo/3.jpg"><img src="photo/3.jpg"></a>
     <a data-fancybox="gallery" href="photo/4.jpg"><img src="photo/4.jpg"></a>
     <a data-fancybox="gallery" href="photo/5.jpg"><img src="photo/5.jpg"></a>
-    <a data-fancybox="gallery" href="photo/6.jpg"><img src="photo/6.jpg"></a>	
+    <a data-fancybox="gallery" href="photo/6.jpg"><img src="photo/6.jpg"></a>
+    <a data-fancybox="gallery" href="photo/7.jpg"><img src="photo/7.jpg"></a>
+	<a data-fancybox="gallery" href="photo/8.jpg"><img src="photo/8.jpg"></a>		
 </div>
-
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slick-slider').slick({
-        autoplay: true,
-        speed: 800,
-        autoplaySpeed: 2000,
-        arrows: true,
-        dots: false,
-        adaptiveHeight: true,
-		infinite: true,
-		slidesToShow: 4, 
-		slidesToScroll: 1,
-      });
-    });
-  </script>
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery(".gallery a").fancybox(); 
-    });
-</script>
-  
+<!------------------------------------------------------- -->	
 
 
-	<div>
-		<form action="" method="post" name="test" id="submitForm">
+<a class="anchor" name="2"></a>
 
-			<label for="firstName">Имя</label>
-			<input type="text" name="firstName" placeholder="Имя" value="" id="firstName"/><br/>
-			<!-- <label for="email">email</label>
-			<input type="text" name="email" placeholder="email" value="" id="email"/><br/> -->
-			<label for="age">ваш возраст</label>
-			<input type="number" min="0" max="200" name="age" placeholder="ваш возраст" value="" id="age"/><br/>
 
-			<!-- <label for="picture">картинка</label>
-			<input type="text" id="picture" placeholder="Enter picture url ..."> -->
-
-			<br>
-			<!-- <a id="linkToGoogle" href="https://google.com.ua">Google</a> -->
+<!------------------------- form ------------------->
+<div class="overflow">
+	<form action="" method="post" name="test" id="submitForm">
+		<label for="firstName">Имя</label>
+		<input type="text" name="firstName" placeholder="Имя" value="" id="firstName"/><br/>
+		<!-- <label for="email">email</label>
+		<input type="text" name="email" placeholder="email" value="" id="email"/><br/> -->
+		<label for="age">ваш возраст</label>
+		<input type="number" min="0" max="200" name="age" placeholder="ваш возраст" value="" id="age"/><br/>
+		<!-- <label for="picture">картинка</label>
+		<input type="text" id="picture" placeholder="Enter picture url ..."> -->
+		<br>
+		<!-- <a id="linkToGoogle" href="https://google.com.ua">Google</a> -->
 <!--
-			<button id="submitBtn" type="submit" onclick="valid(document.getElementById('submitForm'))">Submit</button> -->
+		<button id="submitBtn" type="submit" onclick="valid(document.getElementById('submitForm'))">Submit</button> -->
+		<!-- <input id="submitBtn" type="submit" onclick="valid(document.getElementById('submitForm'))" value="Готово" /> -->
+		<button id='add' onclick="Add(); return false;">добавить</button>
+		<button onclick="delAll(); return false;">удалить все</button>
+	</form>
 
-			<!-- <input id="submitBtn" type="submit" onclick="valid(document.getElementById('submitForm'))" value="Готово" /> -->
+	<table id="table" border="1">
+		<thead>
+			<tr>
+				<th>#</th>
+				<td>UserName:</td>
+				<th>Email:</th>
+				<td>Age</td>
+				<td>ac</td>
+				<th>Picture</th>
+				<th>Delete</th>
+				<th> <input type="button" id ="addDep" value="Add" onclick = "add()" </th>
+				<th> <input type="button" id ="deleteDep" value="x" onclick = "deleteRow(this)" </th>
+			</tr>
+		</thead>
+		<tbody>
 
-			<button id='add' onclick="Add(); return false;">добавить</button>
-
-			<button onclick="delAll(); return false;">удалить все</button>
-
-		</form>
-
-		<table id="table" border="1">
-			<thead>
-					<tr>
-							<th>#</th>
-							<td>UserName:</td>
-							<th>Email:</th>
-							<td>Age</td>
-							<td>ac</td>
-							<th>Picture</th>
-							<th>Delete</th>
-							<th> <input type="button" id ="addDep" value="Add" onclick = "add()" </th>
-							<th> <input type="button" id ="deleteDep" value="x" onclick = "deleteRow(this)" </th>
-					</tr>
-			</thead>
-			<tbody>
-
-			</tbody>
-		</table>
-	</div>
+		</tbody>
+	</table>
+</div>
+<!--------------------------------------------------- -->
 
 
-
-<script>
-
-// let form = document.getElementById('submitForm');
-// let users = [];
-//
-//
-// let deleteElement = e => {
-// 		if($(e.target).hasClass('remove-btn')) {
-// 				////Удаление нужного элемента из users
-// 		}
-// };
-//
-//
-// let renderUsers = users => {
-// 		let htmlStr = ``;
-// 		for(let index in users) {
-// 				htmlStr += `<tr>
-// 						<td>${+index+1}</td>
-// 						<td>${users[index].firstName}</td>
-// 						<td>${users[index].email}</td>
-// 						<td>${users[index].age}</td>
-// 						<td><img src="${users[index].picture}"></td>
-// 						<td><button class="remove-btn">Remove</button></td>
-// 				</tr>`;
-// 		}
-// 		$('#firstName, #email, #age, #picture').val('');
-// 		$('tbody').html(htmlStr);
-// };
-//
-// let addUser = e => {
-// 		e.preventDefault();
-// 		console.log('We are starting...');
-// 		let userObject = {
-// 				firstName: $('#firstName').val(),
-// 				email: $('#email').val(),
-// 				age: +$('#age').val(),
-// 				picture: $('#picture').val()
-// 		};
-// 		if(!userObject.firstName || !userObject.email || !userObject.age || !userObject.picture) {
-// 				//// alert('Заполните все поля');
-// 				return;
-// 		}
-// 		users.push(userObject);
-// 		renderUsers(users);
-// };
-//
-//
-// $('table tbody').on('click', deleteElement);
-//
-// $('#submitBtn').on('click', addUser);
+<a class="anchor" name="3"></a>
 
 
-
-
-
-
-
-
-function Add() {
-
-var name = document.getElementById('firstName').value;
-var age_1 = document.getElementById('age').value;
-
-if(name && age_1) {
-
-var tr = document.createElement('tr');
-
-var td1 = document.createElement('td');
-var td2 = document.createElement('td');
-var td3 = document.createElement('td');
-
-var text1 = document.createTextNode(name);
-var text2 = document.createTextNode(age_1);
-var text3 = document.createElement('button');
-var buttext = document.createTextNode('delete');
-var atr = document.createAttribute('onclick');
-atr.value = 'deleteRow(this);';
-text3.appendChild(buttext);
-text3.setAttributeNode(atr);
-
-td1.appendChild(text1);
-td2.appendChild(text2);
-td3.appendChild(text3);
-
-tr.appendChild(td1);
-tr.appendChild(td2);
-tr.appendChild(td3);
-
-var table = document.getElementById('table');
-table.appendChild(tr);
-console.log('added');
-	}
-}
-
-function delAll() {
-	var table = document.getElementById('table');
-
-	for(var i = table.rows.length - 1; i > 0; i--) {
-		table.deleteRow(i);
-	}
-}
-
-function deleteRow(r) {
-		var i = r.parentNode.parentNode.rowIndex;
-		document.getElementById('table').deleteRow(i);
-	}
-
-</script>
-
-
-
-
-
+<!--------------------------------- spoiler -------------- -->
 <h2>Photo</h2>
+
 <div class="flex">
     <div class="handle-item handle-item--2 spoiler-wrap disabled">
         <img class="spoiler-body" src="photo/1.jpg">
@@ -242,79 +185,59 @@ function deleteRow(r) {
     </div>
 </div>
 
-
-
-<style>
-.spoiler-wrap{background:#fff;margin: 0 0 8px;border:1px solid #efefef}
-.spoiler-head{background:#efefef;cursor:pointer;padding:5px;}
-.spoiler-body{padding:10px}
-.spoiler-wrap.disabled .spoiler-body{display:none}
-.spoiler-wrap.active{border-color:#57AA43}
-.spoiler-wrap.active .spoiler-head{background:#57AA43;color:#fff}
-</style>
-
-<script>
-$(function () {
-	$('.spoiler-body').hide(300);
-	$(document).on('click','.spoiler-head',function (e) {
-		e.preventDefault()
-		$(this).parents('.spoiler-wrap').toggleClass("active").find('.spoiler-body').slideToggle();
-	})
-})
-</script>
-
-
-
-
-
-<script>
-jQuery(document).ready(function($) {
-
-	    $("#cont div").hide(); // Initially hide all content
-	    $("#tabs li:first").attr("id","current"); // Activate first tab
-	    $("#cont div:first").fadeIn(); // Show first tab content
-
-	    $('#tabs a').click(function(e) {
-	        e.preventDefault();
-	        $("#cont div").hide(); //Hide all content
-	        $("#tabs li").attr("id",""); //Reset id's
-	        $(this).parent().attr("id","current"); // Activate this
-	        $('#' + $(this).attr('title')).fadeIn(); // Show content for current tab
-	    });
-	});
-</script>
-
-
+<!------------------------ tabs ------------------------- -->
 <div>
-        <ul id="tabs" style="display: flex; justify-content: space-around;">
-            <li id="current" style="background: aqua; padding: 10px;">
-                <a href="#" title="tabs1">tab 1</a>
-            </li>
-			<li style="background: aqua; padding: 10px;">
-                <a href="#" title="tabs2">tab 2</a>
-            </li>
-			<li style="background: aqua; padding: 10px;">
-                <a href="#" title="tabs3">tab 3</a>
-            </li>
-        </ul>
-		
-        <div id="cont" style="text-align: center;">
-            <div id="tabs1" style="display: block;">
-				<p>tab 1</p>
-            </div>
-			
-            <div id="tabs2">
-				<p>tab 2</p>
-            </div>
-			
-			<div id="tabs3">
-				<p>tab 3</p>
-			</div>
-        </div>
-    </div>
+	<ul id="tabs" style="display: flex; justify-content: space-around;">
+		<li id="current" style="background: aqua; padding: 10px;">
+			<a href="#" title="tabs1">tab 1</a>
+		</li>
+		<li style="background: aqua; padding: 10px;">
+			<a href="#" title="tabs2">tab 2</a>
+		</li>
+		<li style="background: aqua; padding: 10px;">
+			<a href="#" title="tabs3">tab 3</a>
+		</li>
+	</ul>
+	
+	<div id="cont" style="text-align: center;">
+		<div id="tabs1" style="display: block;">
+			<div>tab 1</div>
+		</div>
+		<div id="tabs2">
+			<div>tab 2</div>
+		</div>
+		<div id="tabs3">
+			<div>tab 3</div>
+		</div>
+	</div>
+</div>
+	
+<!------------- accordion ---------------->	
+<div id="accordion">
+  <h3><a href="">Section 1</a></h3>
+	<div><p>1111</p></div>
+  <h3><a href="">Section 2</a></h3>
+	<div><p>2222</p></div>
+  <h3><a href="">Section 3</a></h3>
+	<div><p>3333</p></div>
+  <h3><a href="">Section 4</a></h3>
+	<div><p>4444</p></div>
+</div>
 
+<!------------- accordion2 ------------------------>	
+<div>
+	<div class="spoiler-header1" style="cursor: pointer; color: blue;">s1</div>
+	<p class="spoiler-body1" style="display: none;">s1111</p>
+	<div class="spoiler-header1" style="cursor: pointer; color: blue;">s2</div>
+	<p class="spoiler-body1" style="display: none;">s2222</p>
+	<div class="spoiler-header1" style="cursor: pointer; color: blue;">s3</div>
+	<p class="spoiler-body1" style="display: none;">s3333</p>
+</div>
 
+<p>https://7maxabramovich.github.io/max7.github.io/</p>
 
+<script src="//code.jivosite.com/widget/uYp8PFVR9S" async></script>
+	
 </body>
+	
 </html>
-
